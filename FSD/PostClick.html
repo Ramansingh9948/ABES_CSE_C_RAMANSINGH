@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+      background-color: rgb(248, 34, 255);
+
+            padding: 10px;
+        }
+
+        nav img {
+            width: 40px;
+            height: 40px;
+        }
+
+        nav h3 {
+            margin: auto;
+        }
+
+        .form {
+            width: 50%;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .logo {
+            width: 300px;
+            height: 200px;
+            margin: auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="cmplogo.png" alt="Logo">
+        <h3>Bus Booking System</h3>
+    </nav>
+
+    <h2 class="text-center">Welcome to Bus Booking System</h2>
+
+    <div class="container">
+        <div class="form">
+
+
+            <label for="gender">Select Seat type</label> <br>
+            <input name="gender" value="Male" id="gender" type="checkbox"> AC
+            <br>
+            <input name="gender" value="Female" id="gender" type="checkbox">Non-AC
+            <br><br>
+            Select Payment Menthod
+            <input value="--Select City" type="radio" name="pay">UPI</input>
+            <input value="Delhi" type="radio" name="pay">ATM</input>
+
+            </select>
+            <br><br>
+            <h4 class="text-center">Thank You</h4>
+
+            <br>
+            <br>
+        </div>
+
+        <div>
+            <img src="buss.webp" class="logo" alt="logo" style="margin-right: 60px;">
+        </div>
+    </div>
+</body>
+
+</html>
