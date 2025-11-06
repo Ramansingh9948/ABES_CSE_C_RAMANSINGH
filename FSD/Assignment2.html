@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    .container {
+      border: 2px solid black;
+      width: 60%;
+      margin: 20px auto;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      background-color: rgb(75, 150, 253);
+      padding: 10px;
+    }
+
+    nav img {
+      width: 40px;
+      height: 40px;
+    }
+
+    nav h3 {
+      margin: auto;
+    }
+
+    .form {
+      width: 50%;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .logo {
+      width: 300px;
+      height: 200px;
+      margin: auto;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <img src="cmplogo.png" alt="Logo">
+    <h3>Bus Booking System</h3>
+  </nav>
+
+  <h2 class="text-center">Welcome to Bus Booking System</h2>
+
+  <div class="container">
+    <div class="form">
+      <form action="/FSD/PostCLick.html" method="get">
+        <h4>User Detail</h4>
+
+        <p>
+          Username:
+          <input type="text" name="username">
+        </p>
+
+        <p>
+          User Password:
+          <input type="password" name="password">
+        </p>
+
+        <p>
+          <label>Gender:</label><br>
+          <label><input type="radio" name="gender" value="Male"> Male</label><br>
+          <label><input type="radio" name="gender" value="Female"> Female</label>
+        </p>
+
+        <p>
+          Select City:
+          <select name="city" id="city">
+            <option value="">-- Select City --</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Noida">Noida</option>
+            <option value="Gorakhpur">Gorakhpur</option>
+            <option value="Banaras">Banaras</option>
+          </select>
+        </p>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div>
+      <img src="buss.webp" class="logo" alt="logo" style="margin-right: 60px;">
+    </div>
+  </div>
+</body>
+
+</html>
